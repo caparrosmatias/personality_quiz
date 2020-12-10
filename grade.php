@@ -10,6 +10,13 @@
 
 <body>
 
+<?php
+    $name = $_REQUEST[name];
+    $id = $_REQUEST[id];
+    echo '<h2> Welcome ' . $name . '</h2>';
+    echo '<h2> Your ID is: ' . $id . '</h2>';
+?>
+
 	<div id="page-wrap">
 
 		<h1 class="transparent index-headline" >Results:</h1>
@@ -114,21 +121,15 @@
 
 	   
 
-<h1>Informacion del usuario</h1>
+<h1>Carga de datos</h1>
 <form action="save.php" method="get">
-
-
-  
-    Ingrese id:
-    <input type="text" name="id"><br>
-    Ingrese nombre:
-    <input type="text" name="name"><br>
-    <br>
 <?php
+    echo '<input type="hidden" name="id" value="'.htmlentities($id).'">';
+    echo '<input type="hidden" name="name" value="'.htmlentities($name).'">';
     echo '<input type="hidden" name="result" value="'.htmlentities($result).'">';
 ?>
 
-    <input type="submit" value="Registrar">
+    <input type="submit" value="Guardar">
   </form>
 
 

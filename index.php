@@ -10,8 +10,15 @@
             <div class="overlay index">
 		        <div class="quiz-overlay"></div>
 		        <h1 class="index-headline">Quiz For Shopify Integration</h1>
-		        <p class="index-sell">Made in PHP // Matias Caparros</p>
+            <h1>User Info</h1>
+                Ingrese id:
+                <input type="text" name="id"><br>
+                Ingrese nombre:
+                <input type="text" name="name"><br>
+                <br>
+		            <p class="index-sell">Made in PHP // Matias Caparros</p>
                 <input type="submit" id="submit" class="take-quiz-btn index-btn redglow" value="Take The Quiz" />
+              </form>
             </div>                        
 	    </form>
 </body>

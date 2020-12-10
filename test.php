@@ -2,17 +2,18 @@
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 	<title>Quiz</title>
-	
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
-
 </head>
 
 <body>
 
+<?php
+    $name = $_REQUEST[name];
+    $id = $_REQUEST[id];
+    echo '<h2> Welcome ' . $name . '</h2>';
+    echo '<h2> Your ID is: ' . $id . '</h2>';
+?>
 	<div id="page-wrap">
 
 		<h1 class="transparent index-headline">Quiz</h1>
@@ -157,6 +158,10 @@
                 <li>
                     <div class="quiz-overlay"></div>
                     <h3 class="anticipate">Now it&#8217;s time to see your results...</h3>
+                    <?php
+                        echo '<input type="hidden" name="name" value="'.htmlentities($name).'">';
+                        echo '<input type="hidden" name="id" value="'.htmlentities($id).'">';
+                    ?>
                     <input type="submit" value="Submit Quiz" id="submit-quiz" />
                 </li>
             </ul>
