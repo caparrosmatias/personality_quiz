@@ -11,9 +11,9 @@
 		        <div class="quiz-overlay"></div>
 		        <h1 class="index-headline">Quiz For Shopify Integration</h1>
             <h1>User Info</h1>
-                Ingrese id:
+                Your id:
                 <input type="text" name="id"><br>
-                Ingrese nombre:
+                Your name:
                 <input type="text" name="name"><br>
                 <br>
 		            <p class="index-sell">Made in PHP // Matias Caparros</p>

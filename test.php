@@ -15,14 +15,8 @@
     echo '<h2> Your ID is: ' . $id . '</h2>';
 ?>
 	<div id="page-wrap">
-
 		<h1 class="transparent index-headline">Quiz</h1>
-		
-		<form action="grade.php" method="post" id="quiz">
-		
-		<?php
-
-            ?>    
+		<form action="grade.php" method="post" id="quiz"> 
             <ul id="test-questions">
                 
                 <li>
@@ -157,7 +151,7 @@
 
                 <li>
                     <div class="quiz-overlay"></div>
-                    <h3 class="anticipate">Now it&#8217;s time to see your results...</h3>
+                    <h3 class="anticipate">Lets see your results</h3>
                     <?php
                         echo '<input type="hidden" name="name" value="'.htmlentities($name).'">';
                         echo '<input type="hidden" name="id" value="'.htmlentities($id).'">';
